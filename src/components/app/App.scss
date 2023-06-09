@@ -5,10 +5,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 110px;
+  margin-top: 60px;
   .logo-item {
     width: 190px;
     height: 60px;
+    animation: slideAndFadeIn 1s;
   }
   h1 {
     margin-top: 92px;
@@ -17,15 +18,18 @@
     text-transform: uppercase;
     color: #162C4E;
     opacity: 0.39;
+    animation: headerAnimation 1s;
   }
   p {
     font-size: 18px;
     line-height: 27px;
     color: rgba(0, 0, 0, 0.8);
     text-align: center;
+    animation: slideAndFadeIn 1s;
   }
   .h1-descr {
     margin-top: 8px;
+    animation: slideAndFadeIn 1s;
   }
   .event-descr {
     margin-top: 71px;
@@ -41,9 +45,32 @@
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
+    animation: slideAndFadeIn 1s;
     img {
       float: right;
       margin-top: 3px;
+    }
+  }
+
+  @keyframes slideAndFadeIn {
+    0% {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes headerAnimation {
+    0% {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0.39;
     }
   }
 

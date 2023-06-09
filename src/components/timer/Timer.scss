@@ -4,6 +4,7 @@
   font-size: 72px;
   line-height: 72px;
   color: #162C4E;
+  animation: slideAndFadeIn 1s;
   //width: 588px;
   //height: 130px;
   display: flex;
@@ -17,5 +18,15 @@
   img {
     width: 132px;
     height: 54px;
+  }
+  @keyframes slideAndFadeIn {
+    0% {
+      transform: translateY(-40px); /* Начальное положение объекта вверху (-100px) */
+      opacity: 0; /* Начальная непрозрачность (невидимый) */
+    }
+    100% {
+      transform: translateY(0); /* Конечное положение объекта внизу (0) */
+      opacity: 1; /* Конечная непрозрачность (полностью видимый) */
+    }
   }
 }
