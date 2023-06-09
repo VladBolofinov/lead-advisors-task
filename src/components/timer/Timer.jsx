@@ -5,7 +5,7 @@ import hoursImg from '../../img/items/hours.svg';
 import minutesImg from '../../img/items/minutes.svg';
 import secondsImg from '../../img/items/seconds.svg';
 export const Timer = () => {
-
+//отрефактори покрасивее через map
     const timeDifference = (new Date(2023,6,24).getTime() - new Date().getTime());
     const renderer = ({ hours, minutes, seconds, days }) => {
         return <div className="wrapper">
