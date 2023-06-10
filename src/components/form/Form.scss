@@ -39,3 +39,36 @@
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  .wrapper-form {
+    height: 160px;
+    width: 100%;
+    .wrapper-input {
+      width: 360px;
+      height: 41px;
+      padding: 10px 0 10px 20px;
+    }
+    input {
+      font-size: 14px;
+      line-height: 21px;
+      width: 296px;
+    }
+    button {
+      margin-left: 5px;
+      width: 33px;
+      height: 33px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper-form {
+    height: 141px;
+    .wrapper-input {
+      width: 280px;
+    }
+    input {
+      width: 215px;
+    }
+  }
+}

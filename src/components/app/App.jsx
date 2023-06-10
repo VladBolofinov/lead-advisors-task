@@ -5,6 +5,8 @@ import arrow from '../../img/icons/arrow-right.svg';
 import { Timer } from '../timer/Timer';
 import { Popup } from '../popup/Popup';
 import { Form } from '../form/Form';
+import leftDream from '../../img/items/left-dream.svg';
+import rightDream from '../../img/items/right-dream.svg';
 //сделай отдельный компонент mainPage
 export const App = () => {
     const [emailValue, setEmailValue] = useState('');
@@ -51,11 +53,13 @@ export const App = () => {
 
     return (
         <div className="app">
+            <img className='dream left' src={leftDream} alt="left-dream"/>
+            <img className='dream right' src={rightDream} alt="right-dream"/>
             <div className="logo">
                 <img className="logo-item" src={logo} alt="lead-advisors-logo" />
             </div>
             <h1>Under construction</h1>
-            <p className="h1-descr">We're making lots of improvements and will be <br />back soon</p>
+            <p className="h1-descr">We're making lots of improvements and will be back soon</p>
             <Timer />
             <p className="event-descr">Check our event page when you wait:</p>
             <a href="https://leadadvisors.org/" target="_blank" rel="noreferrer">
