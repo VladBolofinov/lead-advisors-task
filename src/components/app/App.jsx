@@ -57,9 +57,11 @@ export const App = () => {
         <div className="app">
             <img className='dream left' src={leftDream} alt="left-dream"/>
             <img className='dream right' src={rightDream} alt="right-dream"/>
-            <div className="logo">
-                <img className="logo-item" src={logo} alt="lead-advisors-logo" />
-            </div>
+            <a href="https://lead-advisorsvb.onrender.com/">
+                <div className="logo">
+                    <img className="logo-item" src={logo} alt="lead-advisors-logo" />
+                </div>
+            </a>
             <h1 className='great-header'>Under construction</h1>
             <p className="h1-descr">We're making lots of improvements and will be back soon</p>
             <Timer />
