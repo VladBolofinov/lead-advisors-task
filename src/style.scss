@@ -1,15 +1,17 @@
 * {
-  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins','Roboto', sans-serif;
 }
 
 body {
-  background: #EAEBED;
-  color: #232134;
+  background-color: #F5F5F5;
 }
 
+button {
+  cursor: pointer;
+}
 .wrapper {
-  padding: 0 162px;
+
 }
