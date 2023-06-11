@@ -1,9 +1,8 @@
 .wrapper-form {
   height: 192px;
   width: 100%;
-  margin-top: 156px;
+  margin-top: 57px;
   background-color: #162C4E;
-  //padding: 0 111px 0 740px; это для второго элемента было
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +36,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .events-link {
+    position: absolute;
+    right: 40px;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    img {
+      transform: rotate(90deg);
+      margin-left: 10px;
+    }
   }
 }
 @media (max-width: 768px) {

@@ -3,6 +3,10 @@ import './Form.scss';
 import arrow from '../../img/icons/arrow-right.svg';
 
 export const Form = ({emailValue,handleEmailChange,validEmailValue,sendData }) => {
+    const scrollLink = () => {
+        const element = document.getElementById('targetElement');
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
     return (
         <div className="wrapper-form">
             <form
@@ -28,6 +32,10 @@ export const Form = ({emailValue,handleEmailChange,validEmailValue,sendData }) =
                     </div>
                 </label>
             </form>
+            <div className='events-link'
+                 onClick={scrollLink}>Other events
+                <img src={arrow} alt="arrow-right" />
+            </div>
         </div>
     );
 };

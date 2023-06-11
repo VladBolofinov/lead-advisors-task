@@ -7,7 +7,9 @@ import { Popup } from '../popup/Popup';
 import { Form } from '../form/Form';
 import leftDream from '../../img/items/left-dream.svg';
 import rightDream from '../../img/items/right-dream.svg';
+import {Accordion} from "../accordion/Accordion";
 //сделай отдельный компонент mainPage
+//доработай анимацию
 export const App = () => {
     const [emailValue, setEmailValue] = useState('');
     const [requestStatus, setRequestStatus] = useState(false);
@@ -58,7 +60,7 @@ export const App = () => {
             <div className="logo">
                 <img className="logo-item" src={logo} alt="lead-advisors-logo" />
             </div>
-            <h1>Under construction</h1>
+            <h1 className='great-header'>Under construction</h1>
             <p className="h1-descr">We're making lots of improvements and will be back soon</p>
             <Timer />
             <p className="event-descr">Check our event page when you wait:</p>
@@ -76,6 +78,8 @@ export const App = () => {
             />
             <Popup requestStatus={requestStatus}
                    onChangeRequestStatus={onChangeRequestStatus}/>
+            <h2 className='great-header second'>All events</h2>
+            <Accordion/>
         </div>
     );
 };
