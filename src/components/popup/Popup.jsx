@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './Popup.scss';
+
 import crossImg from '../../img/icons/cross.svg';
+import './Popup.scss';
 export const Popup = ({ requestStatus, onChangeRequestStatus}) => {
-//вынеси разметку в функцию с аргументами а то не получется , сделай чтобы если плохой ответ то  вернется надпись не получилось
     return (
         <div className='wrapper-popup'>
             {(requestStatus) ? (

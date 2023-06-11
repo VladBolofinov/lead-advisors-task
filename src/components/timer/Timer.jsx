@@ -1,5 +1,6 @@
 import Countdown from 'react-countdown';
-import './Timer.scss';
+
+
 import daysImg from '../../img/items/days.svg';
 import daysImgResponse from '../../img/items/daysImgResponsive.svg';
 import hoursImg from '../../img/items/hours.svg';
@@ -8,8 +9,8 @@ import minutesImg from '../../img/items/minutes.svg';
 import minutesImgResponse from '../../img/items/minutesImgResponsive.svg';
 import secondsImg from '../../img/items/seconds.svg';
 import secondsImgResponsive from '../../img/items/secondsImgResponsive.svg';
+import './Timer.scss';
 export const Timer = () => {
-//отрефактори покрасивее через map
     const timeDifference = (new Date(2023,6,24).getTime() - new Date().getTime());
     const renderer = ({ hours, minutes, seconds, days }) => {
         return <div className="wrapper">
@@ -19,7 +20,6 @@ export const Timer = () => {
                 <img className='days-value mobile' src={daysImgResponse} alt="days-value"/>
             </div>
             <span>:</span>
-
             <div className="timer-item">
                 {hours<10 ? `0${hours}` : hours}
                 <img className='hours-value desktop' src={hoursImg} alt="hours-value"/>
@@ -38,10 +38,7 @@ export const Timer = () => {
                 <img className='seconds-value mobile' src={secondsImgResponsive} alt="seconds-value"/>
             </div>
         </div>
-
-
     };
-
     return (
         <div className='timer'>
             <Countdown date={Date.now() + timeDifference}

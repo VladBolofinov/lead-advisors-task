@@ -6,6 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 10px;
+  position: sticky;
   .wrapper-input {
     width: 440px;
     height: 59px;
@@ -43,6 +45,7 @@
     font-size: 20px;
     color: #FFFFFF;
     cursor: pointer;
+    display: flex;
     img {
       transform: rotate(90deg);
       margin-left: 10px;
@@ -53,6 +56,8 @@
   .wrapper-form {
     height: 160px;
     width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
     .wrapper-input {
       width: 360px;
       height: 41px;
@@ -68,6 +73,8 @@
       width: 33px;
       height: 33px;
     }
+    .events-link {
+      position: static;
   }
 }
 
@@ -81,4 +88,5 @@
       width: 215px;
     }
   }
+}
 }
