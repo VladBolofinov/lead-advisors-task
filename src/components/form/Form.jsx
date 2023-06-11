@@ -1,6 +1,7 @@
 import React from 'react';
-import './Form.scss';
+
 import arrow from '../../img/icons/arrow-right.svg';
+import './Form.scss';
 
 export const Form = ({emailValue,handleEmailChange,validEmailValue,sendData }) => {
     const scrollLink = () => {

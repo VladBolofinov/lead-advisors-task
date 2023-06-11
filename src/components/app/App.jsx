@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import './App.scss';
-import logo from '../../img/icons/logo.svg';
-import arrow from '../../img/icons/arrow-right.svg';
+
 import { Timer } from '../timer/Timer';
 import { Popup } from '../popup/Popup';
 import { Form } from '../form/Form';
+import {Accordion} from "../accordion/Accordion";
+
 import leftDream from '../../img/items/left-dream.svg';
 import rightDream from '../../img/items/right-dream.svg';
-import {Accordion} from "../accordion/Accordion";
-//сделай отдельный компонент mainPage
-//доработай анимацию
+import logo from '../../img/icons/logo.svg';
+import arrow from '../../img/icons/arrow-right.svg';
+import './App.scss';
+
 export const App = () => {
     const [emailValue, setEmailValue] = useState('');
     const [requestStatus, setRequestStatus] = useState(false);
@@ -49,7 +50,6 @@ export const App = () => {
 
             setEmailValue('');
             setValidEmailValue(false);
-            console.log('Send data');
         }
     };
 

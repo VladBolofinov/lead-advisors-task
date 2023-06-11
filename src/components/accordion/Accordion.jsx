@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Accordion.scss';
+
 import bg1 from '../../img/items/accordionItems/item1.svg';
 import bg2 from '../../img/items/accordionItems/item2.svg';
 import bg3 from '../../img/items/accordionItems/item3.svg';
@@ -7,6 +7,7 @@ import bg4 from '../../img/items/accordionItems/item4.svg';
 import bg5 from '../../img/items/accordionItems/item5.svg';
 import bg6 from '../../img/items/accordionItems/item6.svg';
 import bg7 from '../../img/items/accordionItems/item7.svg';
+import './Accordion.scss';
 
 export const Accordion = () => {
     const [activeIndex, setActiveIndex] = useState(0); // Set initial state to 0
@@ -59,10 +60,3 @@ export const Accordion = () => {
         </div>
     );
 };
-
-
-
-
-
-
-
